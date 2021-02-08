@@ -2,12 +2,12 @@
 
 body {
     background-color: $color-mirage;
-    font-family: $font-stack;
     background-image: url('../images/mobile/image-host.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    font-family: $font-stack;
     height: 100vh;
+    position: relative;
 }
 
 .content {
@@ -26,6 +26,7 @@ body {
     width: 100%;
     height: 100vh;
 }
+
 main h1 {
     color: $color-turquoise;
     font-size: 1.625rem; /* 26px */
@@ -34,22 +35,47 @@ main h1 {
     text-transform: uppercase;
 }
 
-main h1 span,
-main .instruction {
+main h1 .title-emphasis {
     color: $color-white;
 }
 
 .instruction {
-    line-height: 25px;
+    line-height: 1.6;
+    color: $color-periwinkle-gray;
 }
 
 .featured-platforms {
-    padding-top: 2.2em;
-    padding-bottom: 3.2em;
+    margin-top: 2.2em;
+    margin-bottom: 2.5em;
 }
 
 .featured-platforms img {
     width: 100%;
+}
+
+input[type="text"].email{
+    outline: none;
+    box-shadow: none;
+}
+
+.email {
+    font-size: 0.875em;
+    padding: 0.5625em 2em;
+}
+
+.email,
+.email:active,
+.email:focus,
+.email:target, 
+.email:active:focus {
+    background-color: $color-martinique;
+    border-color: $color-martinique;
+    color: $color-white;
+}
+
+.email::placeholder {
+    font-weight: 900;
+    color: $color-form-placeholder-text;
 }
 
 .email,
@@ -58,22 +84,32 @@ main .instruction {
     height: calc(2.875em + .75rem + 2px);
 }
 
-.email {
-    background-color: $color-martinique;
-    font-size: 0.875em;
-    font-weight: 400;
-    color: $color-form-default-text;
-    padding: 0.5625em 2em;
+button.btn:active,
+button.btn:focus,
+button.btn:target,
+button.btn:active:focus {
     outline: none;
-    border: none;
+    box-shadow: none;
+}
+
+.btn-request,
+.btn-request:active,
+.btn-request:focus,
+.btn-request:target,
+.btn-request:active:focus {
+    background-color: $color-turquoise;
+    border-color: $color-turquoise;
+    color: $color-mirage;
 }
 
 .btn-request {
-    background-color: $color-turquoise;
-    color: $color-mirage;
+    color: $color-button-text;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .btn-request:hover {
     background-color: $color-button-hover;
     color: $color-mirage;
 }
+

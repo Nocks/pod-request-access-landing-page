@@ -2,12 +2,12 @@
 /* Typography */
 body {
   background-color: #121725;
-  font-family: "Chivo", sans-serif;
   background-image: url("../images/mobile/image-host.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  font-family: "Chivo", sans-serif;
   height: 100vh;
+  position: relative;
 }
 
 .content {
@@ -36,22 +36,63 @@ main h1 {
   text-transform: uppercase;
 }
 
-main h1 span,
-main .instruction {
+main h1 .title-emphasis {
   color: #ffffff;
 }
 
 .instruction {
-  line-height: 25px;
+  line-height: 1.6;
+  color: #c2cbe5;
 }
 
 .featured-platforms {
-  padding-top: 2.2em;
-  padding-bottom: 3.2em;
+  margin-top: 2.2em;
+  margin-bottom: 2.5em;
 }
 
 .featured-platforms img {
   width: 100%;
+}
+
+input[type="text"].email {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.email {
+  font-size: 0.875em;
+  padding: 0.5625em 2em;
+}
+
+.email,
+.email:active,
+.email:focus,
+.email:target,
+.email:active:focus {
+  background-color: #2c344b;
+  border-color: #2c344b;
+  color: #ffffff;
+}
+
+.email::-webkit-input-placeholder {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.email:-ms-input-placeholder {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.email::-ms-input-placeholder {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.email::placeholder {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .email,
@@ -60,19 +101,29 @@ main .instruction {
   height: calc(2.875em + .75rem + 2px);
 }
 
-.email {
-  background-color: #2c344b;
-  font-size: 0.875em;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 0.5625em 2em;
+button.btn:active,
+button.btn:focus,
+button.btn:target,
+button.btn:active:focus {
   outline: none;
-  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-request,
+.btn-request:active,
+.btn-request:focus,
+.btn-request:target,
+.btn-request:active:focus {
+  background-color: #54e6af;
+  border-color: #54e6af;
+  color: #121725;
 }
 
 .btn-request {
-  background-color: #54e6af;
   color: #121725;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .btn-request:hover {
