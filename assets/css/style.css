@@ -37,6 +37,10 @@ body {
   height: 100%;
 }
 
+main {
+  margin-bottom: 48px;
+}
+
 main h1 {
   color: #54e6af;
   font-size: 1.625rem;
@@ -164,6 +168,7 @@ button.btn:active:focus {
     background-color: #121725;
     padding-top: 5.8125em;
     width: 635px;
+    margin-bottom: 153px;
   }
   main h1 {
     font-size: 3rem;
@@ -200,6 +205,13 @@ button.btn:active:focus {
   .pattern-dots {
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html,
+  body {
+    height: calc(100% + 200px);
   }
 }
 /*# sourceMappingURL=style.css.map */

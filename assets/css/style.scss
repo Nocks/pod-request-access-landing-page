@@ -37,6 +37,10 @@ body {
     height: 100%;
 }
 
+main {
+    margin-bottom: 48px;
+}
+
 main h1 {
     color: $color-turquoise;
     font-size: 1.625rem; /* 26px */
@@ -151,6 +155,7 @@ button.btn:active:focus {
         background-color: $color-mirage;
         padding-top: 5.8125em;
         width: 635px;
+        margin-bottom: 153px;
 
         & h1 {
             font-size: 3rem;
@@ -195,4 +200,13 @@ button.btn:active:focus {
         position: absolute;
         bottom: 0;
     }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    html,
+    body {
+        height: calc(100% + 200px);
+    } 
 }
