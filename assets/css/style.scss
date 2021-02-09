@@ -1,17 +1,26 @@
 @import "variables";
 
+html,
+body {
+  height: 100%;
+}
+
 body {
     background-color: $color-mirage;
     background-image: url('../images/mobile/image-host.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     font-family: $font-stack;
-    height: 100vh;
     position: relative;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .content {
-    padding-top: 4em;    
+    padding-top: 4em;
 }
 
 .header {
@@ -23,8 +32,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
 }
 
 main h1 {
@@ -120,7 +130,7 @@ button.btn:active:focus {
     body {
         background-image: url('../images/tablet/image-host.jpg');
         background-position: right top;
-        background-size: 491px;
+        background-size: 476px;
     }
 
     .overlay {

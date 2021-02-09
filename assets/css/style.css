@@ -1,13 +1,22 @@
 /* Colours */
 /* Typography */
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #121725;
   background-image: url("../images/mobile/image-host.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   font-family: "Chivo", sans-serif;
-  height: 100vh;
   position: relative;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .content {
@@ -23,8 +32,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
 
 main h1 {
@@ -137,7 +147,7 @@ button.btn:active:focus {
   body {
     background-image: url("../images/tablet/image-host.jpg");
     background-position: right top;
-    background-size: 491px;
+    background-size: 476px;
   }
   .overlay {
     display: none;
