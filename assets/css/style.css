@@ -24,7 +24,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main h1 {
@@ -43,6 +43,7 @@ main h1 .title-emphasis {
 .instruction {
   line-height: 1.6;
   color: #c2cbe5;
+  margin-bottom: 0;
 }
 
 .featured-platforms {
@@ -129,5 +130,66 @@ button.btn:active:focus {
 .btn-request:hover {
   background-color: #b3ffe2;
   color: #121725;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/tablet/image-host.jpg");
+    background-position: right top;
+    background-size: 491px;
+  }
+  .overlay {
+    display: none;
+  }
+  .content {
+    padding-top: 3.1em;
+    padding-left: 2.5em;
+    padding-right: 0;
+  }
+  .header {
+    margin-bottom: 152px;
+  }
+  main {
+    background-color: #121725;
+    padding-top: 5.8125em;
+    width: 635px;
+  }
+  main h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  main .instruction {
+    width: 27.8125em;
+    font-size: 1.125rem;
+    margin-bottom: 2.5em;
+  }
+  main .access-form {
+    position: relative;
+    margin-bottom: 2.5em;
+  }
+  main .access-form .email {
+    width: 26.6875rem;
+    padding-top: 0.875em;
+    padding-bottom: 0.875em;
+    height: 56px;
+  }
+  main .access-form .btn-request {
+    position: absolute;
+    top: 1.3125em;
+    left: 16.25em;
+    right: 5px;
+    width: 10.125em;
+    height: 2.875em;
+  }
+  main .featured-platforms {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 33.5em;
+  }
+  .pattern-dots {
+    position: absolute;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
