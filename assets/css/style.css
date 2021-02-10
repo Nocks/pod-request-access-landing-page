@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colours */
 /* Typography */
 html,
@@ -223,6 +224,39 @@ button.btn:active:focus {
   html,
   body {
     height: calc(100% + 200px);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background-image: url("../images/desktop/image-host.jpg");
+    background-position: right top 8.125em;
+    background-size: 888px 640px;
+  }
+  .content {
+    padding-top: 8.125em;
+    padding-left: 10.3125em;
+    padding-right: 0;
+  }
+  .header {
+    margin-bottom: 6.4375em;
+  }
+  main {
+    padding-top: 3em;
+    margin-bottom: 0;
+  }
+  main .access-form .btn-request {
+    top: −0 0.6875;
+  }
+  .pattern-dots {
+    position: relative;
+  }
+  .pattern-dots img {
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 /*# sourceMappingURL=style.css.map */
