@@ -121,11 +121,16 @@ input[type="email"].email {
   color: #fb3e3e;
   font-size: 0.75rem;
   font-weight: bold;
-  padding-left: 1.75rem;
+  padding-left: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0;
-  display: none;
+  text-align: center;
+  opacity: 0;
+}
+
+.email-error.show {
+  opacity: 1;
 }
 
 button.btn:active,
@@ -201,6 +206,10 @@ button.btn:active:focus {
     padding-bottom: 0.875em;
     height: 56px;
   }
+  main .access-form .email-error {
+    padding-left: 1.75rem;
+    text-align: left;
+  }
   main .access-form .btn-request {
     position: absolute;
     top: 1.3125em;
@@ -245,6 +254,9 @@ button.btn:active:focus {
   main {
     padding-top: 3em;
     margin-bottom: 0;
+  }
+  main .access-form {
+    margin-bottom: 0.5em;
   }
   main .access-form .btn-request {
     top: −0 0.6875;

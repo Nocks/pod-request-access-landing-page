@@ -9,8 +9,8 @@ function validateEmail(email) {
 
 btnRequest.addEventListener('click', () => {
     if (!validateEmail(emailAddress.value)) {
-        emailErrorMessage.style.display = 'block';
+        emailErrorMessage.classList.add('show');
     } else {
-        emailErrorMessage.style.display = 'none';
+        emailErrorMessage.classList.remove('show');
     }
 });
